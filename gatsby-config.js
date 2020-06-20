@@ -20,7 +20,7 @@ module.exports = {
   siteMetadata: {
     title: 'Paul Ivanov',
   },
-  pathPrefix: '/PaulsWebsite',
+  pathPrefix: '/',
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
