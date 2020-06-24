@@ -23,9 +23,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - run: echo 'CONTENTFUL_SPACE_ID=${{ secrets.CONTENTFUL_SPACE_ID }} \n CONTENTFUL_ACCESS_TOKEN=${{ secrets.CONTENTFUL_ACCESS_TOKEN }}' > .env.production
+    - run: printf 'CONTENTFUL_SPACE_ID=${{ secrets.CONTENTFUL_SPACE_ID }}\nCONTENTFUL_ACCESS_TOKEN=${{ secrets.CONTENTFUL_ACCESS_TOKEN }}' > .env.production
     - run: cat .env.production
-    - run: ls
+    - run: dir
     - run: yarn
     - run: yarn deploy
       env:
