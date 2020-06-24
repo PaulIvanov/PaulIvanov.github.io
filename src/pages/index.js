@@ -12,7 +12,7 @@ const RootIndex = ({ data, location }) => {
 
     return (
       <Layout location={location}>
-        <div style={{ background: '#fff' }}>
+        <div style={{ background: '#eee' }}>
           <Helmet title={siteTitle} />
           <Hero data={author.node} />
           <div className="wrapper">
