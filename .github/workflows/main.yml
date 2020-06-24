@@ -24,6 +24,8 @@ jobs:
       with:
         node-version: '12.x'
     - run: echo 'CONTENTFUL_SPACE_ID=${{ secrets.CONTENTFUL_SPACE_ID }} \n CONTENTFUL_ACCESS_TOKEN=${{ secrets.CONTENTFUL_ACCESS_TOKEN }}' > .env.production
+    - run: cat .env.production
+    - run: ls
     - run: yarn
     - run: yarn deploy
       env:
