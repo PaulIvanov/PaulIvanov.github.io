@@ -25,11 +25,12 @@ jobs:
         node-version: '12.x'
     - run: printf 'CONTENTFUL_SPACE_ID=${{ secrets.CONTENTFUL_SPACE_ID }}\nCONTENTFUL_ACCESS_TOKEN=${{ secrets.CONTENTFUL_ACCESS_TOKEN }}' > .env.production
     - run: yarn
-
+    - run: yarn build
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
+        publish_branch: master
       env:
         CI: true
