@@ -23,12 +23,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - run:  git config --global user.email "paulivanov123@gmail.com"
-    - run:  git config --global user.name "PaulIvanov"
     - run: printf 'CONTENTFUL_SPACE_ID=${{ secrets.CONTENTFUL_SPACE_ID }}\nCONTENTFUL_ACCESS_TOKEN=${{ secrets.CONTENTFUL_ACCESS_TOKEN }}' > .env.production
-    - run: cat .env.production
-    - run: dir
     - run: yarn
-    - run: yarn deploy
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
       env:
         CI: true
