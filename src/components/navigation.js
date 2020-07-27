@@ -12,10 +12,10 @@ export default () => (
       </div>
       <div className={styles.column}>
         <li className={styles.navigationItem}>
-          <Link to="/">Home</Link>
+          <Link to="/about/">About</Link>
         </li>
         <li className={styles.navigationItem}>
-          <Link to="/">Contact</Link>
+          <Link to="/contact/">Contact</Link>
         </li>
         <li className={styles.navigationItem}>
           <Link to="/blog/">Blog</Link>

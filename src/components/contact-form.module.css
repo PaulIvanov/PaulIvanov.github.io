@@ -1,0 +1,43 @@
+.contactform {
+    display: flex;
+    justify-content: center;
+}
+
+.formField {
+    margin: 8px;
+    width: 100%;
+}
+
+input, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    padding: 0 10px;
+    margin: 0px 10px;
+    width: 90%;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
+    border: solid 1px lightgray;
+  }
+
+textarea {
+    resize: vertical;
+    min-width: 200px;
+}
+
+.formLabel {
+    margin-right: 4px;
+    display: inline-block;
+}
+
+.submitButton {
+    appearance:none;
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+}
+

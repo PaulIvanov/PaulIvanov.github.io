@@ -1,0 +1,16 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15.8vh;
+  max-height: 400px;
+  background: #e1e1e1;
+  font-size: 2em;
+  overflow: hidden;
+}
+
+.contactText {
+  display: flex;
+  justify-content: center;
+  margin: 8px;
+}
