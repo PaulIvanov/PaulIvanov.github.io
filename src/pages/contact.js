@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
-import styles from './Contact.module.css'
+import styles from './contact.module.css'
 import Layout from '../components/layout'
 import ContactForm from '../components/contact-form'
 
